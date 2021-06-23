@@ -1,5 +1,4 @@
 import pandas as pd
 
-print("hello")
-df = pd.read_csv('Pandas_Testing.csv')
+df = pd.read_excel('Birthday_Database.xlsx', sheet_name="Sheet1")
 print(df)

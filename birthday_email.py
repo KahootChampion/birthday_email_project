@@ -15,8 +15,6 @@ Content-type: text/html
 Subject: {subject}
 
 Hello, this is a python bot. Beep Boop!
-
-<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Click here to unsubscribe from this email in the future</a>
 """
 
 server = smtplib.SMTP("smtp.gmail.com", 587)
