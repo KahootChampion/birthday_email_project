@@ -33,27 +33,23 @@ closing_statement = "Thank you"
 
 
 for row in email_list.itertuples():
-    receiver_name = getattr(row,'Name' )
+    receiver_name = getattr(row,'Name')
     receiver_email = getattr(row, 'Email')
-    subject = f"In commemoration of turning {getattr(row, 'Age')} years old!"
+    subject = f"In commemoration of turning {getattr(row,'Age')} years old!"
 
-    message = f"""From: Commemoration Bot 
-    To: {receiver_name} {receiver_email}
-    MIME-Version: 1.0
-    Content-type: text/html
-    Subject: {subject}
-    {greeter}
-    <br>
-    <br>
-    {message_body}
-    <br>
-    <br>
-    {closing_statement},
-    <br>
-    <br>
-    Haris M.
-    """
+    message = f"From: Commemoration Bot\n" \
+              f"To: {receiver_name} {receiver_email}\n" \
+              f"MIME-Version: 1.0\n" \
+              f"Content-type: text/html\n" \
+              f"Subject: {subject}\n" \
+              f"{greeter}\n" \
+              f"<br><br>\n" \
+              f"{message_body}\n" \
+              f"<br><br>\n" \
+              f"{closing_statement},\n" \
+              f"<br><br>\n" \
+              f"Haris M."
+
     server.sendmail(sender_email, receiver_email, message)
 
 server.quit()
-
