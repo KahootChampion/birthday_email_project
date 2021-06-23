@@ -18,10 +18,13 @@ if email_list.empty:
     print("No one to email")
     exit()
 else:
-    email_list['Age'] = today_datetime.year - int(email_list['Birthday'].astype(str).str[0:4])
-    print(email_list)
+    email_list['Age'] = today_datetime.year - (email_list['Birthday'].astype(str).str[0:4].astype(int))
+    #print(email_list)
 
 # If the execution reaches beyond this point, there is a natural implication that there are people to email
+
+for index, row in email_list.iterrows():
+    print(f"{row['Name']} {row['Email']}")
 
 print("\n\n\n")
 
