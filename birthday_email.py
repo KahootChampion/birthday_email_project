@@ -1,6 +1,7 @@
 import smtplib
 import os
 
+# The email and password for the email bot are stored in environment variables
 sender_email = os.environ.get('SENDER_EMAIL')
 sender_password = os.environ.get('SENDER_PASSWORD')
 
