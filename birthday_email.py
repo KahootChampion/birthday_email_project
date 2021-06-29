@@ -35,7 +35,7 @@ closing_statement = "Thank you"
 for row in email_list.itertuples():
     receiver_name = getattr(row,'Name')
     receiver_email = getattr(row, 'Email')
-    subject = f"In commemoration of turning {getattr(row,'Age')} years old!"
+    subject = f"In Commemoration of Turning {getattr(row,'Age')} Years Old!"
 
     message = f"From: Commemoration Bot\n" \
               f"To: {receiver_name} {receiver_email}\n" \
