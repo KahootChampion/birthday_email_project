@@ -1,1 +1,1 @@
-00 14 * * * source /Users/harismuhammad/.zshenv; cd /Users/harismuhammad/Documents/Personal/Email_Project && /Users/harismuhammad/opt/anaconda3/bin/python3 birthday_email.py
+00 14 * * * source /Users/harismuhammad/.zshenv; cd /Users/harismuhammad/Documents/Personal/birthday_email_project && /Users/harismuhammad/opt/anaconda3/bin/python3 birthday_email.py
