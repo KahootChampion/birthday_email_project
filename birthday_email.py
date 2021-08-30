@@ -30,6 +30,7 @@ server.login(sender_email, sender_password)
 greeter = "Congratulations!"
 message_body = "This is a bot created to wish you a happy birthday as I am pretty terrible with remembering myself...."
 closing_statement = "Thank you"
+author = "Haris M."
 
 
 for row in email_list.itertuples():
@@ -48,7 +49,7 @@ for row in email_list.itertuples():
               f"<br><br>\n" \
               f"{closing_statement},\n" \
               f"<br><br>\n" \
-              f"Haris M."
+              f"{author}"
 
     server.sendmail(sender_email, receiver_email, message)
 
