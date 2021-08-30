@@ -1,4 +1,4 @@
-#Birthday Email Project
+# Birthday Email Project
 
 Oftentimes, we feel guilty when we forget the birthdays of those close to us. It would be useful to have some sort of tool which automatically wishes our loved ones happy birthday on that special day. This is is why I started developing this project.
 
@@ -6,7 +6,7 @@ Oftentimes, we feel guilty when we forget the birthdays of those close to us. It
 
 When birthday_email.py is executed, it analyzes an Excel file titled "Birthday_Database.xslx". This Excel spreadsheet contains information about those you wish to automatically send birthday wishes to. The code analyzes the spreadsheet and determines if it should send those listed in the spreadsheet a happy birthday message. This code is meant to be run once daily preferably with the use of some sort of task scheduler.
 
-##Prerequisites
+## Prerequisites
 
 ### Excel Spreadsheet
 
